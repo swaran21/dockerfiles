@@ -27,6 +27,6 @@ ENV KC_DB=postgres
 ENV KC_DB_URL=${KC_DB_URL}
 ENV KC_DB_USERNAME=${KC_DB_USERNAME}
 ENV KC_DB_PASSWORD=${KC_DB_PASSWORD}
-ENV KC_HOSTNAME=keycloak.onrender.com
+ENV KC_HOSTNAME=dockerfiles-2ena.onrender.com
 
 ENTRYPOINT ["/entrypoint.sh"]
