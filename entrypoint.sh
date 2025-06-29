@@ -1,6 +1,4 @@
-#!/bin/sh
-# Use the PORT env var or default to 8080
-PORT=${PORT:-8080}
+#!/bin/bash
+set -e
 
-# Start Keycloak binding to all interfaces on that port
-exec /opt/keycloak/bin/kc.sh start --http-port=${PORT} --hostname-strict=false --hostname=0.0.0.0
+/opt/keycloak/bin/kc.sh start --optimized --http-port=${PORT:-8080}
